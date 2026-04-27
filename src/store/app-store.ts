@@ -1,6 +1,6 @@
 import { createStore } from "zustand";
 import { createNavigationSlice } from "./navigation-slice";
-import { INavSlice, INotificationSlice } from "./store-tstore-t.ts";
+import { INavSlice, INotificationSlice } from "./store-t";
 import { createNotificationSlice } from "./notification-slice";
 
 
@@ -11,3 +11,4 @@ export const appStore = () =>
     ...createNotificationSlice(...a),
     ...createNavigationSlice(...a),
   }));
+  
